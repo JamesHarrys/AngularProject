@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: #FE4534;
+}
+
+.logo {
+    border: 5px dashed #FE4534;
+}
+
+.introduction {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 45px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+}
+
+.num-available {
+    margin-top: 40px;
+    margin-left: 15%;
+    height: 70px;
+    font-size: 1.3em;
+    font-family: 'Pacifico', cursive;
+    color: #05c46b;
+}
+
+

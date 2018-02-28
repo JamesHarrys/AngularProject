@@ -1,0 +1,41 @@
+strong {
+    color: #3877A6;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+}
+.list {
+    width: 1300px;
+    margin: auto;
+}
+.table {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    color: #282A35;
+    float: left;
+    height: 670px;
+}
+.table .picture {
+    clear: both;
+    width: 300px;
+}
+.table img {
+    width: 300px;
+}
+.table .description {
+    clear: both;
+}
+.title, .producer, .director, .release-date, .genre  {
+    font-family: Avenir Next;
+}
+strong {
+    color: #3877A6;
+}
+.ratings {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: #3877A6;
+    font-size: 30px;
+}

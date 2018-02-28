@@ -1,0 +1,25 @@
+<div class="not-available" *ngIf="movielist.length <= 0">
+    No films available
+</div>
+<div class="num-available" *ngIf="movielist.length > 0">
+    Number of movies available: {{movielist.length}}
+</div>
+
+<br>
+
+<div class="list" *ngFor="let movie of movielist" >
+    <div class="table" (click)="showMovie(movie.title)" (click)="selectMovie(movie.id)" routerLink="/movie/{{movie.id}}" appMovieActive>
+        <div class="picture">
+            <img src="{{movie.picture}}" alt="{{movie.title}}"><img>
+        </div>
+        <div class="description">
+            <div class="title"><strong>Title:  </strong>{{movie.title}}</div>
+            <div class="producer"><strong>Producer:  </strong>{{movie.producer}}</div>
+            <div class="director"><strong>Director:  </strong>{{movie.director}}</div>
+            <div class="release-date"><strong>Release date:  </strong>{{movie.release_date}}</div>
+            <div class="genre"><strong>Genre:  </strong>{{movie.genre}}</div>
+            <div class="ratings" [innerHtml]="movie.ratings|movieRatings"></div>
+        </div>
+    </div>
+</div>
+
