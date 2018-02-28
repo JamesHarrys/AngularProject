@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movies',
@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class MoviesComponent implements OnInit {
   private movielist: Array<any>;
-  constructor( private router: Router) { }
+  private isConnected: boolean = true;
+  constructor( private router: Router) {}
+
 
   ngOnInit() {
     this.movielist = [
@@ -124,6 +126,9 @@ export class MoviesComponent implements OnInit {
   }
   showMovie(title: string) {
     alert("You have clicked on " + title);
+  }
+  showValue(value: string) {
+    console.log(value);
   }
   selectMovie( id: number) {
     console.log('la');

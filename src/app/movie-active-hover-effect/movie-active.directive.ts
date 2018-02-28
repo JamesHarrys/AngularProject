@@ -12,6 +12,8 @@ export class MovieActiveDirective {
     this.el.nativeElement.style.backgroundColor = null;
   }
   
-  constructor(private el: ElementRef) {}  
+  constructor(public el: ElementRef) {
+    this.el.nativeElement.style.backgroundColor = 'color';
+  }  
   
 }
